@@ -1,0 +1,9 @@
+{
+    "name": "octoenergy-octo_nginx",
+    "version": "1.0",
+    "author": "Octopus Energy",
+    "license": "BSD",
+    "summary": "Nginx wrapper for Octopus Energy",
+    "source": "https://github.com/octoenergy/puppet-octo_nginx",
+    "dependencies": []
+}
