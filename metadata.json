@@ -1,6 +1,6 @@
 {
     "name": "octoenergy-octo_nginx",
-    "version": "1.0",
+    "version": "1.1",
     "author": "Octopus Energy",
     "license": "BSD",
     "summary": "Nginx module for Octopus Energy",
