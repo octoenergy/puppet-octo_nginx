@@ -4,6 +4,9 @@ Puppet module for managing Nginx for Octopus Energy machines.
 
 ## Changelog
 
+### v1.1.1
+- Fix typo in init.pp
+
 ### v1.1
 
 - Use PPA to get Nginx 1.12
