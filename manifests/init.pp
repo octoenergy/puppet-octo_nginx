@@ -3,7 +3,7 @@ class octo_nginx (
 ) {
     # Use custom PPA to get modern version of Nginx
     include apt
-    apt:ppa { "ppa:nginx/stable": }
+    apt::ppa { "ppa:nginx/stable": }
     exec { "update package lists": 
         command => "/usr/bin/apt-get update",
         require => Apt::Ppa["ppa:nginx/stable"]
