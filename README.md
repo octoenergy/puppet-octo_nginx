@@ -1,3 +1,9 @@
 # octo_nginx
 
-Nginx Puppet module for Octopus Energy
+Puppet module for managing Nginx for Octopus Energy machines.
+
+## Changelog
+
+### v1.0
+
+Initial version.
