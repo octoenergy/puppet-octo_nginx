@@ -3,7 +3,12 @@
     "version": "1.0",
     "author": "Octopus Energy",
     "license": "BSD",
-    "summary": "Nginx wrapper for Octopus Energy",
+    "summary": "Nginx module for Octopus Energy",
     "source": "https://github.com/octoenergy/puppet-octo_nginx",
-    "dependencies": []
+    "dependencies": [
+        {
+            "name": "puppetlabs-apt",
+            "version_requirement": "2.2.1"
+        }
+    ]
 }
