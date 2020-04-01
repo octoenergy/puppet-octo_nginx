@@ -4,6 +4,9 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.3
+- Stop logging `remote_user`
+
 ### v1.2
 - Allow no default conf to be set.
 
