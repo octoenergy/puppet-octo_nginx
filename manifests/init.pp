@@ -1,5 +1,7 @@
 class octo_nginx (
-    $default_site_source = undef,
+    # Only 1 of the following 2 parameters should be provided.
+    $default_site_source = undef,  # deprecated: use default_site_content with file() instead
+    $default_site_content = undef,
 ) {
     # Use custom PPA to get modern version of Nginx
     include apt
@@ -20,11 +22,12 @@ class octo_nginx (
         require => Package["nginx"],
     }
 
-    if $default_site_source {
+    if $default_site_source or $default_site_content {
         file { "nginx default site":
             path => "/etc/nginx/sites-enabled/default",
             ensure => "file",
             source => $default_site_source,
+            content => $default_site_content,
             require => Package["nginx"],
         }
         service { "nginx":
