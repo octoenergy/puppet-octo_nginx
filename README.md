@@ -4,6 +4,9 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.4
+- Add `default_site_content` parameter to `octo_nginx`, making it possible to use a template.
+
 ### v1.3
 - Stop logging `remote_user`
 
