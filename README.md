@@ -4,6 +4,9 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.6
+- Allow config content to be passed in.
+
 ### v1.5
 - Increase keepalive timeout.
 
