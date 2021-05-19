@@ -4,6 +4,9 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.7
+- Update requirement on puppetlabs-apt dependency from "2.2.1" to ">= 2.2.1"
+
 ### v1.6
 - Allow config content to be passed in.
 
