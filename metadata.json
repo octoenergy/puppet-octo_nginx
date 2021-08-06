@@ -1,6 +1,6 @@
 {
     "name": "octoenergy-octo_nginx",
-    "version": "1.7",
+    "version": "1.8",
     "author": "Kraken Technologies",
     "license": "BSD",
     "summary": "Nginx module for Kraken Technologies",
