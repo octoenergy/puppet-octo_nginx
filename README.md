@@ -4,6 +4,10 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.9.2
+
+- Change nginx log directory owner to fix log rotation.
+
 ### v1.9.1
 
 - Fix bug in handling Ubuntu 20.04.
