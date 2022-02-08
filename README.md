@@ -4,6 +4,9 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.9
+- Add support for Ubuntu 20.04.
+
 ### v1.8
 - Add Amazon Load Balancer Trace ID to access logs.
 
