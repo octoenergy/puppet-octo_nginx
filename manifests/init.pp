@@ -2,12 +2,13 @@ class octo_nginx (
     $default_site_source = undef,
     $default_site_content = undef,
 ) {
-    $update_require = undef
     if $operatingsystemrelease == '18.04' {
         # Use custom PPA to get version v1.18 Nginx on Xenial.
         include apt
         apt::ppa { "ppa:nginx/stable": }
         $update_require = Apt::Ppa["ppa:nginx/stable"]
+    } else {
+        $update_require = undef
     }
 
     exec { "update package lists for nginx":
