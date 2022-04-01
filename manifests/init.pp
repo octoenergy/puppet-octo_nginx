@@ -21,6 +21,14 @@ class octo_nginx (
         require => Exec["update package lists for nginx"],
     }
 
+    file { "nginx log dir":
+        path => "/var/log/nginx",
+        ensure => "directory",
+        owner => "www-data",
+        mode => "0755",
+        require => Package["nginx"],
+    }
+
     file { "nginx config":
         path => "/etc/nginx/nginx.conf",
         ensure => "file",
