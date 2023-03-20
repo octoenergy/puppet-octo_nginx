@@ -4,6 +4,10 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.10
+
+- Enable logging of `$remote_user` in logs
+
 ### v1.9.1
 
 - Fix bug in handling Ubuntu 20.04.
