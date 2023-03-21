@@ -28,6 +28,13 @@ class octo_nginx (
         require => Package["nginx"],
     }
 
+    file { "nginx systemd config":
+        path => "/etc/systemd/system/multi-user.target.wants/nginx.service",
+        ensure => "file",
+        source => "puppet:///modules/octo_nginx/nginx.service",
+        require => Package["nginx"],
+    }
+
     if $default_site_source {
         file { "nginx default site":
             path => "/etc/nginx/sites-enabled/default",
