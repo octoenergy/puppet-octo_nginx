@@ -4,6 +4,10 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.11
+
+- Increase limits for number of open files to prevent running out during a DDoS.
+
 ### v1.10
 
 - Enable logging of `$remote_user` in logs
