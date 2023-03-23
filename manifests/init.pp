@@ -28,11 +28,17 @@ class octo_nginx (
         require => Package["nginx"],
     }
 
-    file { "nginx systemd config":
-        path => "/etc/systemd/system/multi-user.target.wants/nginx.service",
-        ensure => "file",
-        source => "puppet:///modules/octo_nginx/nginx.service",
+    file { "nginx systemd override dir":
+        path    => "/etc/systemd/system/nginx.service.d",
+        ensure  => "directory",
         require => Package["nginx"],
+    }
+
+    file { "nginx systemd config":
+        path    => "/etc/systemd/system/nginx.service.d/LimitNOFILE.conf",
+        ensure  => "file",
+        source  => "puppet:///modules/octo_nginx/nginx.service",
+        require => File["nginx systemd override dir"],
     }
 
     if $default_site_source {
@@ -44,6 +50,7 @@ class octo_nginx (
         }
         service { "nginx":
             ensure => running,
+            enable => true,
             subscribe => [
                 File["nginx config"],
                 File["nginx default site"],
@@ -58,6 +65,7 @@ class octo_nginx (
         }
         service { "nginx":
             ensure => running,
+            enable => true,
             subscribe => [
                 File["nginx config"],
                 File["nginx default site"],
@@ -66,6 +74,7 @@ class octo_nginx (
     } else {
         service { "nginx":
             ensure => running,
+            enable => true,
             subscribe => [
                 File["nginx config"],
             ],
