@@ -4,6 +4,11 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.12
+
+- Use systemd override instead of replacing whole nginx.service file, allowing
+  us to benefit from upstream service changes
+
 ### v1.11
 
 - Increase limits for number of open files to prevent running out during a DDoS.
