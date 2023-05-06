@@ -1,14 +1,14 @@
 {
-    "name": "octoenergy-octo_nginx",
-    "version": "1.12",
-    "author": "Kraken Technologies",
-    "license": "BSD",
-    "summary": "Nginx module for Kraken Technologies",
-    "source": "https://github.com/octoenergy/puppet-octo_nginx",
-    "dependencies": [
-        {
-            "name": "puppetlabs-apt",
-            "version_requirement": ">= 2.2.1"
-        }
-    ]
+  "name": "octoenergy-octo_nginx",
+  "version": "1.13",
+  "author": "Kraken Technologies",
+  "license": "BSD",
+  "summary": "Nginx module for Kraken Technologies",
+  "source": "https://github.com/octoenergy/puppet-octo_nginx",
+  "dependencies": [
+    {
+      "name": "puppetlabs-apt",
+      "version_requirement": ">= 2.2.1"
+    }
+  ]
 }
