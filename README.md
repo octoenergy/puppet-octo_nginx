@@ -4,6 +4,10 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
+### v1.13
+
+- Use puppet-lint to fixup module
+
 ### v1.12
 
 - Use systemd override instead of replacing whole nginx.service file, allowing
