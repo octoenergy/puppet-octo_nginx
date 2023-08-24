@@ -4,10 +4,6 @@ Puppet module for managing Nginx for Kraken Technologies machines.
 
 ## Changelog
 
-### v1.15
-
-- Start logging `$http_x_forwarded_for` 
-
 ### v1.14
 
 - Stop logging `$remote_user` in logs by default
